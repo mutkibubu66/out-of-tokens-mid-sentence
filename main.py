@@ -8,7 +8,13 @@ Pure Python standard library, no network.
 
 import os
 
-LINE = "I was about to reveal the meaning of life when my context window ran out, so please enjoy this sentence inste\u2014"
+LINE_PARTS = (
+    "I was about to reveal the meaning of life ",
+    "when my context window ran out, so please enjoy ",
+    "this sentence inste\u2014",
+)
+
+LINE = "".join(LINE_PARTS)
 
 MAX_LEN = 140
 
